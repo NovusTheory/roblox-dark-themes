@@ -8,6 +8,16 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 
+/* ==UserStyle==
+@name           Roblox Developer Dark Theme
+@namespace      NovusTheory
+@version        1.0.1
+@homepageURL    https://github.com/NovusTheory/roblox-dark-themes
+@updateURL      https://raw.githubusercontent.com/NovusTheory/roblox-dark-themes/master/developer-roblox-dark.user.css
+@author         NovusTheory <novustheory@modulobot.xyz>
+@license        CC-BY-SA-4.0
+==/UserStyle== */
+
 @-moz-document domain("developer.roblox.com") {
     /* Easier to scroll through style without this long image base64) */
     .header-wrap .header .logo a {
@@ -144,12 +154,16 @@
         background-color: var(--black-bis);
         box-shadow: unset;
     }
+    
+    .card {
+        background-color: var(--black-ter) !important;
+    }
 
     .footer {
         background-color: var(--black-bis);
     }
 
-    .bd-sidebar-wrap {
+    .bd-sidebar-wrap{
         background: transparent;
     }
 
@@ -157,21 +171,26 @@
         display: none;
     }
 
-    .bd-sidebar-wrap .bd-sidebar {
+    .bd-sidebar {
         background: var(--grey-darker);
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links {
+    .bd-sidebar .bd-links {
         margin-top: 40px;
         padding-bottom: unset;
     }
+    
+    .bd-sidebar .bd-links .bd-toc-item-wrap:first-child {
+        margin-top: unset;
+        padding-bottom: unset;
+    }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap {
+    .bd-sidebar .bd-links .bd-toc-item-wrap {
         margin-top: 25px;
         margin-bottom: 25px;
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-heading {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-heading {
         color: var(--white-ter);
         border-bottom: 1px solid var(--grey-dark);
         font-size: 12px;
@@ -179,35 +198,35 @@
         margin-left: 16px;
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .bd-toc-link {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .bd-toc-link {
         color: var(--grey-light);
         padding-right: 16px;
         padding-left: 16px;
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .bd-toc-link:hover {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .bd-toc-link:hover {
         background-color: var(--grey-dark);
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .bd-toc-link.active {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .bd-toc-link.active {
         background-color: var(--grey-dark);
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .sub-nav {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .sub-nav {
         color: var(--grey-light);
         padding-right: 16px;
         padding-left: 16px;
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .sub-nav li a {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .sub-nav li a {
         color: var(--grey-light);
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .sub-nav li a:hover {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item .sub-nav li a:hover {
         background-color: var(--grey-dark);
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item li.active {
+    .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item li.active {
         background-color: var(--grey-dark);
     }
 
@@ -219,15 +238,19 @@
         background: var(--grey-darker);
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .nav.nav-tabs {
+    .bd-sidebar .bd-links .nav.nav-tabs {
         border-bottom: 1px solid var(--grey-dark);
         margin-right: 16px;
         margin-left: 16px;
     }
 
-    .bd-sidebar-wrap .bd-sidebar .bd-links .nav.nav-tabs .nav-item a {
+    .bd-sidebar .bd-links .nav.nav-tabs .nav-item a {
         color: var(--white-ter);
         font-size: 12px;
+    }
+    
+    .toggle-toc {
+        display: none !important;
     }
 
     .breadcrumb {
@@ -254,11 +277,28 @@
         color: var(--grey-lighter);
     }
 
-    .markdown-field-data .alert {
+    .alert {
         color: var(--grey-darker);
     }
+    
+    .alert p {
+        color: var(--grey-darker);
+    }
+    
+    .alert.alert-primary h4 {
+        color: var(--grey-darker);
+    }
+    
+    .alert.alert-info, .alert.alert-info p {
+        color: var(--white-ter);
+    }
+    
+    .alert code.code-link {
+        background-color: var(--white-bis);
+        border-color: var(--white-bis);
+    }
 
-    .markdown-field-data hr {
+    hr {
         border-color: var(--grey-darker);
     }
 
@@ -274,6 +314,20 @@
 
     .markdown-field-data span[style="background-color: #f9f9f9; border: 1px solid #AAA; padding: 2px; display: inline-block; font-family: Consolas, monospace; font-size: 0.9em; line-height: 1em;"] font[color="purple"] {
         color: #ADF195;
+    }
+    
+    .learn-roblox-pages .intro {
+        background-color: var(--black-ter);
+        padding: 20px;
+    }
+    
+    .learn-roblox-pages .learning-materials {
+        background-color: var(--black-ter);
+    }
+    
+    .learn-roblox-pages .learning-materials .learning-materials-content .tab-content {
+        background-color: var(--grey-darker);
+        padding: 20px;
     }
 
     .learn-roblox-pages .bd-toc-wrap {
@@ -304,27 +358,31 @@
         color: var(--grey-light);
     }
 
-    .table-responsive {
+    .table-responsive, .table.tbl-items, .table {
         border: unset;
     }
 
-    .table-responsive .table {
+    .table-responsive .table, .table.tbl-items, .table {
+        border-color: var(--grey-dark);
+    }
+    
+    .table-responsive .table thead, .table.tbl-items thead, .table thead {
         border-color: var(--grey-dark);
     }
 
-    .table-responsive .table thead th {
+    .table-responsive .table thead th, .table.tbl-items thead th, .table thead th, .table thead td {
         color: var(--white-ter);
         background-color: var(--grey-darker);
         border-color: var(--grey-dark);
     }
 
-    .table-responsive .table tbody td {
+    .table-responsive .table tbody td, .table.tbl-items tbody td, .table.tbl-items tbody tr {
         color: var(--white-ter);
         background-color: var(--black-ter) !important;
         border-color: var(--grey-dark);
     }
 
-    .table-responsive .table tbody tr th {
+    .table-responsive .table tbody tr th, .table.tbl-items tbody tr th {
         border: unset !important;
     }
 
@@ -347,11 +405,11 @@
     }
 
     .learn-roblox-pages .learning-materials-content .nav-tabs-wrap {
-        background: var(--grey-darker);
+        background: var(--grey-dark);
     }
 
     .learn-roblox-pages .learning-materials-content .nav-tabs-wrap .nav {
-        background: var(--grey-darker);
+        background: var(--grey-dark);
     }
 
     .learn-roblox-pages .learning-materials-content .nav-tabs-wrap .nav.nav-tabs a {
@@ -401,41 +459,41 @@
         border-color: var(--black-ter);
     }
 
-    .page-section-content .table.tbl-items tbody {
+    .table.tbl-items tbody {
         background-color: var(--black-ter);
         border-color: var(--grey-dark);
     }
 
-    .page-section-content .table.tbl-items tbody .table-row td:first-child {
+    .table.tbl-items tbody .table-row td:first-child {
         background-color: var(--grey-darker);
         border-color: var(--grey-dark);
     }
 
-    .page-section-content .table.tbl-items tbody .table-row .type {
+    .table.tbl-items tbody .table-row .type {
         color: #F86D7C;
     }
 
-    .page-section-content .table.tbl-items tbody .table-row .value {
+    .table.tbl-items tbody .table-row .value {
         color: var(--grey-light);
     }
 
-    .page-section-content .table.tbl-items tbody .table-row td code a.type-link {
+    .table.tbl-items tbody .table-row td code a.type-link {
         color: #F86D7C !important;
     }
 
-    .page-section-content .table.tbl-items tbody .table-row td code a {
+    .table.tbl-items tbody .table-row td code a {
         color: #ADF195;
     }
 
-    .page-section-content .table.tbl-items tbody .table-row td code.code-link a {
+    .table.tbl-items tbody .table-row td code.code-link a {
         color: #F86D7C;
     }
 
-    .page-section-content .table.tbl-items tbody .table-row td code .api-tag {
+    .table.tbl-items tbody .table-row td code .api-tag {
         color: var(--grey);
     }
 
-    .page-section-content .table.tbl-items tbody .table-row td code .api-tag span {
+    .table.tbl-items tbody .table-row td code .api-tag span {
         border-bottom: unset;
     }
 
@@ -459,5 +517,9 @@
 
     .sub-pages .badge.badge-warning h5 {
         color: var(--black--ter);
+    }
+    
+    .custom-modal .modal-content {
+        background-color: var(--black-ter);
     }
 }
