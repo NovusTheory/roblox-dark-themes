@@ -90,6 +90,18 @@
     .section {
         margin-bottom: 50px !important;
     }
+    
+    .gs-article-container {
+        background-color: var(--black-ter);
+    }
+    
+    .gs-article-container-2 {
+        background-color: var(--black-ter);
+    }
+    
+    .gs-article-container-border {
+        border-color: var(--black-bis);    
+    }
 
     .news-n-announcements {
         background-color: var(--black-ter);
