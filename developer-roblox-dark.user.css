@@ -8,6 +8,16 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 
+/* ==UserStyle==
+@name           Roblox Developer Dark Theme
+@namespace      NovusTheory
+@version        1.0.2
+@homepageURL    https://github.com/NovusTheory/roblox-dark-themes
+@updateURL      https://raw.githubusercontent.com/NovusTheory/roblox-dark-themes/master/developer-roblox-dark.user.css
+@author         NovusTheory <novustheory@modulobot.xyz>
+@license        CC-BY-SA-4.0
+==/UserStyle== */
+
 @-moz-document domain("developer.roblox.com") {
     /* Easier to scroll through style without this long image base64) */
     .header-wrap .header .logo a {
@@ -81,6 +91,10 @@
     .header .actions-wrap .search-box .form-control {
         color: var(--white-ter);
         background-color: var(--black-bis);
+    }
+    
+    .search-box-wrap input, .search-box-wrap input:focus {
+        color: var(--white-ter);
     }
 
     .home .section {
@@ -238,6 +252,23 @@
 
     .tab-content .tab-pane .multi-nested-list li ul li:last-child::after, .tab-content .tab-pane .multi-nested-list li:last-child::after {
         background: var(--grey-darker);
+    }
+    
+    .custom-tabs .nav-tabs-wrap, .custom-tabs .nav-tabs {
+        background-color: var(--grey-dark);
+        border-bottom: 1px solid var(--grey-dark);
+    }        
+    
+    .custom-tabs .nav-tabs a {
+        color: var(--white-ter);   
+    }
+    
+    .custom-tabs .nav-tabs li .active {
+        color: var(--white-ter);
+    }
+    
+    .custom-tabs .nav-tabs a:hover {
+        color: var(--white-ter);
     }
 
     .bd-sidebar .bd-links .nav.nav-tabs {
@@ -431,6 +462,47 @@
     .learn-roblox-pages .learning-materials-content .tab-content .row a .inner-wrap:hover {
         box-shadow: 0 0 2px var(--grey-light);
     }
+    
+    .language-dropdown .input-group-btn {
+        color: var(--white-ter);
+    }
+    
+    .language-dropdown .input-dropdown-btn {
+        background-color: var(--black-ter);
+        border: 1px solid var(--grey-darker);
+        color: var(--white-ter);
+    }
+    
+    .language-dropdown .input-group-btn .input-dropdown-btn:hover, .language-dropdown .show .input-dropdown-btn {
+        background-color: var(--grey-darker);
+        border: 1px solid var(--grey-darker);
+        color: var(--white-ter);
+    }
+    
+    .language-dropdown #icon-globe {
+        color: var(--white-ter);
+        background: rgba(0, 0, 0, 0) url(https://www.roblox.com/images/Shared/generic_01312019.svg) no-repeat scroll -20px -1300px/40px padding-box border-box;
+    }
+    
+    .language-dropdown .rbx-selection-label {
+        color: var(--white-ter);
+    }
+    
+    .language-dropdown .icon-down-16x16 {
+        background: rgba(0, 0, 0, 0) url("https://www.roblox.com/images/Shared/generic_01312019.svg") no-repeat scroll -20px -272px/32px padding-box border-box;
+    }
+    
+    .language-dropdown .show .dropdown-menu {
+        background-color: var(--grey-darker);
+    }
+    
+    .language-dropdown .input-group-btn .dropdown-menu li a:hover, .language-dropdown .input-group-btn .dropdown-menu li a:focus, .language-dropdown .input-group-btn .dropdown-menu li a.active {
+        background-color: var(--grey-dark);
+    }
+    
+    .language-dropdown li {
+        color: var(--white-ter);
+    }
 
     .custom-select-dropdown.select2-drop {
         background-color: var(--black-ter);
@@ -459,6 +531,14 @@
     .search-box-wrap .form-control {
         background-color: var(--black-ter);
         border-color: var(--black-ter);
+    }
+    
+    .search-container .search-lists p {
+        color: var(--white-ter);
+    }
+    
+    .search-container .search-lists li {
+        border-bottom: 1px solid var(--grey-darker);
     }
 
     .table.tbl-items tbody {
