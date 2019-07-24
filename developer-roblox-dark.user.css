@@ -8,16 +8,6 @@
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
 
-/* ==UserStyle==
-@name           Roblox Developer Dark Theme
-@namespace      NovusTheory
-@version        1.0.2
-@homepageURL    https://github.com/NovusTheory/roblox-dark-themes
-@updateURL      https://raw.githubusercontent.com/NovusTheory/roblox-dark-themes/master/developer-roblox-dark.user.css
-@author         NovusTheory <novustheory@modulobot.xyz>
-@license        CC-BY-SA-4.0
-==/UserStyle== */
-
 @-moz-document domain("developer.roblox.com") {
     /* Easier to scroll through style without this long image base64) */
     .header-wrap .header .logo a {
