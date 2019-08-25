@@ -594,4 +594,25 @@
     .custom-modal .modal-content {
         background-color: var(--black-ter);
     }
+    
+    .swiftype-widget .autocomplete {
+        background-color: var(--black-ter);
+        border-color: var(--grey-darker);
+    }
+    
+    .swiftype-widget .autocomplete::before {
+        border-bottom-color: var(--grey-darker);
+    }
+    
+    .swiftype-widget .autocomplete::after {
+        border-bottom-color: var(--black-ter);
+    }
+    
+    .swiftype-widget .autocomplete > div ul li a {
+        color: var(--white-ter);
+    }
+    
+    .swiftype-widget .autocomplete > div ul li a:hover {
+        background-color: var(--grey-darker);
+    }
 }
