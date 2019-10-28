@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Roblox Developer Dark Theme
 @namespace      NovusTheory
-@version        1.0.2
+@version        1.0.3
 @homepageURL    https://github.com/NovusTheory/roblox-dark-themes
 @updateURL      https://raw.githubusercontent.com/NovusTheory/roblox-dark-themes/master/developer-roblox-dark.user.css
 @author         NovusTheory <novustheory@modulobot.xyz>
@@ -76,9 +76,13 @@
     .bd-navbar .navbar-nav .nav-item .nav-link.active {
         color: #32b4ff;
     }
+    
+    .navbar-expand-lg .navbar-nav {
+        margin-left: 1rem;
+    }
 
     .header .logo {
-        width: 13%;
+        flex-basis: 0;
     }
 
     .header .actions-wrap .search-box {
@@ -184,7 +188,7 @@
         display: none;
     }
 
-    .bd-sidebar {
+    .bd-sidebar, .header .bd-sidebar {
         background: var(--grey-darker);
     }
 
@@ -193,9 +197,27 @@
         padding-bottom: unset;
     }
     
+    /* Override margin on mobile sidebar */
+    .header .bd-sidebar .bd-links {
+        margin-top: 20px;
+    }
+    
     .bd-sidebar .bd-links .bd-toc-item-wrap:first-child {
         margin-top: unset;
         padding-bottom: unset;
+    }
+    
+    .learn-roblox-pages .bd-sidebar .bd-links .bd-toc-item-wrap:first-child {
+        margin-top: 20px;
+    }
+    
+    /* Override margin on mobile sidebar */
+    .learn-roblox-pages .header .bd-sidebar .bd-links .bd-toc-item-wrap:first-child {
+        margin-top: unset;
+    }
+    
+    .header .bd-sidebar .bd-search {
+        padding: 20px 15px 0;
     }
 
     .bd-sidebar .bd-links .bd-toc-item-wrap {
@@ -242,6 +264,17 @@
     .bd-sidebar .bd-links .bd-toc-item-wrap .bd-toc-item li.active {
         background-color: var(--grey-dark);
     }
+    
+    .bd-sidebar .bd-links .nav.nav-tabs {
+        border-bottom: 1px solid var(--grey-dark);
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .bd-sidebar .bd-links .nav.nav-tabs .nav-item a {
+        color: var(--white-ter);
+        font-size: 12px;
+    }
 
     .tab-content .tab-pane .multi-nested-list a {
         color: var(--white-ter);
@@ -266,17 +299,6 @@
     
     .custom-tabs .nav-tabs a:hover {
         color: var(--white-ter);
-    }
-
-    .bd-sidebar .bd-links .nav.nav-tabs {
-        border-bottom: 1px solid var(--grey-dark);
-        margin-right: 16px;
-        margin-left: 16px;
-    }
-
-    .bd-sidebar .bd-links .nav.nav-tabs .nav-item a {
-        color: var(--white-ter);
-        font-size: 12px;
     }
     
     .toggle-toc {
@@ -621,5 +643,26 @@
     
     .swiftype-widget .autocomplete > div ul li a:hover {
         background-color: var(--grey-darker);
+    }
+    
+    /* Mobile nav */
+    .header .wrap .navbar-inner {
+        background-color: var(--black-ter);
+    }
+    
+    .header .home-link {
+        background-color: var(--grey-darker);
+    }
+    
+    .header .home-link a {
+        color: var(--white-ter);
+    }
+    
+    .header .closebtn {
+        color: var(--grey);
+    }
+    
+    .header .sidebar-visible .back-icon {
+        background-color: var(--grey-dark);
     }
 }
