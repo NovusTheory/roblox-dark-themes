@@ -53,9 +53,16 @@
         background-color: var(--black-bis);
         color: #F5F5F5;
     }
+    
+    .main-container {
+        margin-top: 64px;
+    }
 
     .header-wrap {
         max-width: unset !important;
+        position: absolute;
+        height: 64px;
+        max-height: 64px;
     }
 
     .header-wrap .header {
