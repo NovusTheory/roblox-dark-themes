@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Roblox Developer Dark Theme
 @namespace      NovusTheory
-@version        1.0.7
+@version        1.0.8
 @homepageURL    https://github.com/NovusTheory/roblox-dark-themes
 @updateURL      https://raw.githubusercontent.com/NovusTheory/roblox-dark-themes/master/developer-roblox-dark.user.css
 @author         NovusTheory <novustheory@modulobot.xyz>
@@ -694,17 +694,32 @@
         padding: unset;
     }
     
-    #live-search-modal .modal-content .modal-body #live-search-result-tab {
-        border-bottom-color: var(--grey-dark);
+    #live-search-modal .modal-content .nav-tabs-wrap {
+        background-color: var(--grey-dark);
     }
     
-    #live-search-modal .modal-content .modal-body #live-search-result-tab .nav-item .nav-link.active {
+    #live-search-modal .modal-content .nav-tabs-wrap #live-search-result-tab {
+        border-bottom-color: var(--grey-dark);
         background-color: var(--grey-dark);
-        color: var(--white-ter);
+    }
+    
+    #live-search-modal .modal-content .nav-tabs-wrap #live-search-result-tab .nav-item .nav-link {
+        background-color: var(--grey-dark);
+        color: var(--white-ter) !important;
         border-color: var(--grey-dark);
     }
     
-    #live-search-modal .modal-content .modal-body #live-search-result-tab .nav-item .nav-link:hover {
+    #live-search-modal .modal-content .nav-tabs-wrap #live-search-result-tab .nav-item .nav-link.active {
+        background-color: var(--grey-dark);
+        color: var(--white-ter) !important; /* ... Roblox is using !important themselves here */
+        border-color: var(--grey-dark);
+    }
+    
+    #live-search-modal .modal-content .nav-tabs-wrap #live-search-result-tab .nav-item .nav-link:hover {
         border-color: transparent;
+    }
+    
+    #live-search-modal .modal-content .liveSearch {
+        padding: 1rem;
     }
 }
